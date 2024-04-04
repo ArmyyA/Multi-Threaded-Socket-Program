@@ -34,6 +34,7 @@ int main(void)
 
 			if (input == "done")
 			{
+				clientSocket.Write(ByteArray(input)); // Notify the server that client is disconnecting
 				break;
 			}
 
